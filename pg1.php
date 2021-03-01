@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,15 @@
             session_start();
             $_SESSION['nome'] = $_POST['nome'];
 
-            echo "Olá $_SESSION[nome], seja bem vindo ao sistema!";
+            echo "Olá $_SESSION[nome], seja bem vindo ao sistema de cálculo de média!";
         }
     ?>
+    <form action="processa.php" method="POST">
+    <p> Você deseja realizar o cálculo de:
+        <input type="radio" value = "s" name="juros"/>Juros Simples 
+        <input type="radio" value = "c" name="juros"/>Juros Compostos
+    </p>
+    <input type="submit"/>
+    </form>
 </body>
 </html>
