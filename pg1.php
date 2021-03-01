@@ -17,9 +17,11 @@
         }
     ?>
     <form action="processa.php" method="POST">
-    <p> Você deseja realizar o cálculo de:
-        <input type="radio" value = "s" name="juros"/>Juros Simples 
-        <input type="radio" value = "c" name="juros"/>Juros Compostos
+    <p> Você deseja realizar o cálculo de:<br/><br/>
+        <label for = "s">Juros simples</label>
+        <input type="radio" value = "s" name="juros" id = "s"/>
+        <label for = "c">Juros Composto</label>
+        <input type="radio" value = "c" name="juros" id = "c"/>
     </p>
     <input type="submit"/>
     </form>

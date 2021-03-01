@@ -9,8 +9,8 @@
 <body>
     <form action="pg1.php" method="POST">
         <p>
-            Olá! or favor, digite o seu nome: 
-            <input type="text" name="nome"/>
+            <label for="nome">Olá! por favor, digite o seu nome:</label>
+            <input type="text" name="nome" id="nome"/>
             <input type="submit"/>
         </p>
     </form>
